@@ -58,6 +58,8 @@ object ContinueSaver {
         } finally {
             try {
                 ois?.close()
+                bis?.close()
+                fis?.close()
             } catch (e: Exception) {}
         }
 
